@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .loading-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .loading {
+            width: 100px;
+            height: 20px;
+            background-color: #ddd;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .loading .bar {
+            width: 90%; /* Adjusted to reach around 90% */
+            height: 100%;
+            background-color: #4caf50;
+            position: absolute;
+            animation: loadingAnimation 3s infinite ease-in-out;
+        }
+
+        .speech-bubble {
+            position: relative;
+            background-color: #4caf50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #4caf50;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes loadingAnimation {
+            0% {
+                width: 0;
+            }
+            50% {
+                width: 90%;
+            }
+            100% {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Under Construction</h1>
+    <p>This website is a work in progress. We're working hard to bring you something awesome. Stay tuned!</p>
+
+    <div class="loading-container">
+        <div class="loading">
+            <div class="bar"></div>
+        </div>
+        <div class="speech-bubble">
+            <div class="arrow"></div>
+            Almost Done!
+        </div>
+    </div>
+</body>
+</html>
